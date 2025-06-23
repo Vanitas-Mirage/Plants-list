@@ -3,7 +3,6 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
-
 }
 
 /* Hero */
@@ -34,35 +33,38 @@ body {
   opacity: 0.85;
 }
 
+/* Testo Hero con linea e freccia */
 .hero-text {
   position: absolute;
-  bottom: 8%;             
+  bottom: 8%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   font-family: 'Lora', serif;
   font-size: 1.8rem;
   border-bottom: 2px solid white;
-  padding-bottom: 0.3rem;
-  width: 80%;            
+  padding-bottom: 0.5rem;
+  width: 80%;
   text-align: center;
-  cursor: pointer;
-  display: inline-block; /* Per gestire bene larghezza e linea */
+  display: inline-block;
 }
 
+/* Freccia animata */
 .hero-text::after {
-  content: "↓";
-  display: block;           /* forziamo la freccia sotto */
-  margin: 0.4rem auto 0;    /* spazio sopra la freccia, centrata */
-  animation: bounce 1.5s infinite;
-  font-size: 2.4rem;
-  color: white;
-  line-height: 1;
+  content: "";
+  display: block;
+  margin: 1rem auto 0;
+  width: 18px;
+  height: 18px;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(45deg);
+  animation: bounceDown 2s infinite;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(10px); }
+@keyframes bounceDown {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(8px); }
 }
 
 /* Mobile */
@@ -74,22 +76,7 @@ body {
   }
 }
 
-/* Freccia animata verso il basso */
-.hero-text::before {
-  content: "";
-  display: block;
-  margin: 5px auto 0;
-  width: 14px;
-  height: 14px;
-  border-left: 3px solid white;
-  border-bottom: 3px solid white;
-  transform: rotate(45deg);
-  animation: bounceDown 2s infinite;
-  position: relative;
-}
-
-
-/* Card piante: solo sfondo bianco e box-shadow leggera, niente bordi */
+/* Card piante */
 .plant-card {
   background: white;
   border-radius: 1rem;
@@ -97,7 +84,7 @@ body {
   margin-bottom: 1.5rem;
   padding: 1rem;
   text-align: center;
-  border: none;  /* tolto eventuale bordo */
+  border: none;
 }
 
 /* Immagini piante */
@@ -115,14 +102,14 @@ body {
   font-family: 'Lora', serif;
 }
 
-/* Descrizione */
+/* Descrizione pianta */
 .plant-desc {
   font-size: 0.95rem;
   color: #555;
   margin-top: 0.5rem;
 }
 
-/* Wrapper lista */
+/* Contenitore lista piante */
 .section-wrapper {
   max-width: 600px;
   margin: 2rem auto;
