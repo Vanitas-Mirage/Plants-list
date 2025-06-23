@@ -35,7 +35,6 @@
     async function loadPlants() {
       try {
         const response = await fetch('https://vanitas-mirage.github.io/Plants-list/plants.json');
-
         const plants = await response.json();
         const container = document.getElementById('plantList');
 
