@@ -12,8 +12,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5; /* fallback sfondo */
+
+  /* background sfumato con "onde" marroni ai lati e verde al centro */
+  background: 
+    radial-gradient(circle at left center, rgba(150, 100, 50, 0.7) 20%, transparent 60%),
+    radial-gradient(circle at right center, rgba(150, 100, 50, 0.7) 20%, transparent 60%),
+    linear-gradient(to bottom, #6B8E23 0%, #4B692F 100%);
 }
+
 
 .hero video {
   position: absolute;
@@ -34,8 +40,8 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 200px; /* puoi regolare l'altezza */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #f5f5f5 100%);
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #4B692F 100%);
   z-index: 0;
 }
 
