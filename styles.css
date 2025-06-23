@@ -16,6 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   
+  /* stesso background del body per continuità */
   background: 
     radial-gradient(circle at left center, rgba(150, 100, 50, 0.7) 20%, transparent 60%),
     radial-gradient(circle at right center, rgba(150, 100, 50, 0.7) 20%, transparent 60%),
@@ -34,8 +35,7 @@ body {
   transform: translate(-50%, -50%);
   object-fit: cover;
 
-  /* Qui puoi regolare l’opacità per vedere la sfumatura dietro */
-  opacity: 0.85;
+  opacity: 0.85; /* permette di vedere sfumatura sotto */
 }
 
 .hero-text {
