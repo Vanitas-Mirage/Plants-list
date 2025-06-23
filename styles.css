@@ -74,6 +74,21 @@ body {
   }
 }
 
+/* Freccia animata verso il basso */
+.hero-text::before {
+  content: "";
+  display: block;
+  margin: 5px auto 0;
+  width: 14px;
+  height: 14px;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(45deg);
+  animation: bounceDown 2s infinite;
+  position: relative;
+}
+
+
 /* Card piante: solo sfondo bianco e box-shadow leggera, niente bordi */
 .plant-card {
   background: white;
