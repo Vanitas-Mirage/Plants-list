@@ -14,22 +14,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: 
+    radial-gradient(circle at left center, rgba(150, 100, 50, 0.7) 20%, transparent 60%),
+    radial-gradient(circle at right center, rgba(150, 100, 50, 0.7) 20%, transparent 60%),
+    linear-gradient(to bottom, #6B8E23 0%, #4B692F 100%);
 }
 
-/* Overlay sfumato per transizione video → sfondo */
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40vh;
-  pointer-events: none;
-  z-index: 1;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #4B692F 100%);
-}
-
-/* Video */
 .hero video {
   position: absolute;
   top: 50%;
@@ -44,25 +34,22 @@ body {
   opacity: 0.85;
 }
 
-/* Testo Hero: assicurati z-index alto e colore ben visibile */
 .hero-text {
   position: absolute;
-  bottom: 20px;       /* sulla parte bassa del video */
+  bottom: 20px;
   width: 100%;
   text-align: center;
   color: white;
   font-family: 'Lora', serif;
   font-size: 1.8rem;
   padding-bottom: 10px;
-
-  border-bottom: 2px solid white; /* linea bianca sotto */
-  cursor: default;
+  border-bottom: 2px solid white;
+  background: none;
+  box-shadow: none;
   z-index: 10;
-  background: none;  /* niente sfondo */
-  box-shadow: none;  /* niente ombra */
+  cursor: default;
 }
 
-/* Freccia animata verso il basso */
 .arrow-down {
   display: inline-block;
   margin-left: 10px;
@@ -75,7 +62,6 @@ body {
   vertical-align: middle;
 }
 
-/* Animazione bounce */
 @keyframes bounceDown {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0) rotate(45deg);
@@ -87,6 +73,7 @@ body {
     transform: translateY(4px) rotate(45deg);
   }
 }
+
 
 /* Card piante: solo sfondo bianco e box-shadow leggera, niente bordi */
 .plant-card {
