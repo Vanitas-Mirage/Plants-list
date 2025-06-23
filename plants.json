@@ -1,17 +1,17 @@
 [
     {
       "name": "Lagerstroemia indica",
-      "img": "img/IMG_4483.JPG",
+      "img": "img/img_4483.jpg",
       "description": "Lagerstroemia indica, comunemente nota come mirto crespo, è un piccolo albero, o arbusto, deciduo originario della Cina sudorientale"
     },
     {
       "name": "Acer polymorphum",
-      "img": "",
+      "img": "img/img_4487.jpg",
       "description": ""
     },
     {
       "name": "Osmanthus fragrans",
-      "img": "img/IMG_4482.jpg",
+      "img": "img/img_4482.jpg",
       "description": ""
     },
     {
@@ -21,17 +21,17 @@
     },
     {
       "name": "Salvia microphylla",
-      "img": "",
+      "img": "img/img_4484.jpg",
       "description": ""
     },
     {
       "name": "salvia amistad",
-      "img": "",
+      "img": "img/img_4488.jpg",
       "description": ""
     },
     {
       "name": "pitosforo tobira nano",
-      "img": "",
+      "img": "img/img_4486.jpg",
       "description": ""
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "name": "Miscanto sinensis",
-        "img": "",
+        "img": "img/img_4489.jpg",
         "description": ""
     },
     {
