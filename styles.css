@@ -20,6 +20,15 @@ body {
     linear-gradient(to bottom, #6B8E23 0%, #4B692F 100%);
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; bottom:0; left:0; right:0; */
+  background: linear-gradient(to bottom, rgba(107, 142, 35, 0.7) 0%, rgba(75, 105, 47, 0.7) 100%);
+  z-index: 0.5; /* sopra il video, sotto il testo */
+  pointer-events: none; /* non interferisce con click */
+}
+
 /* Overlay sfumato per transizione video → sfondo */
 .hero::after {
   content: "";
