@@ -36,26 +36,28 @@ body {
 
 .hero-text {
   position: absolute;
-  bottom: 8%;             /* Sposta leggermente più in alto */
+  bottom: 8%;             
   left: 50%;
   transform: translateX(-50%);
   color: white;
   font-family: 'Lora', serif;
   font-size: 1.8rem;
   border-bottom: 2px solid white;
-  padding-bottom: 0.25rem;
-  width: 80%;             /* Linea più lunga */
+  padding-bottom: 0.3rem;
+  width: 80%;            
   text-align: center;
   cursor: pointer;
+  display: inline-block; /* Per gestire bene larghezza e linea */
 }
 
 .hero-text::after {
   content: "↓";
-  display: block;          /* Forza la freccia sotto */
-  margin: 0.2rem auto 0;   /* Spazio sopra e centro */
+  display: block;           /* forziamo la freccia sotto */
+  margin: 0.4rem auto 0;    /* spazio sopra la freccia, centrata */
   animation: bounce 1.5s infinite;
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: white;
+  line-height: 1;
 }
 
 @keyframes bounce {
@@ -63,7 +65,7 @@ body {
   50% { transform: translateY(10px); }
 }
 
-/* Mobile - sposta ancora più in alto la scritta */
+/* Mobile */
 @media (max-width: 576px) {
   .hero-text {
     bottom: 12%;
@@ -71,7 +73,6 @@ body {
     width: 90%;
   }
 }
-
 
 /* Freccia animata verso il basso */
 .hero-text::before {
@@ -87,25 +88,6 @@ body {
   position: relative;
 }
 
-/* Animazione "bounce" verso il basso */
-@keyframes bounceDown {
-  0%, 100% {
-    transform: rotate(45deg) translateY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: rotate(45deg) translateY(10px);
-    opacity: 0.5;
-  }
-}
-
-/* Media query per mobile: alza ancora di più la scritta */
-@media (max-width: 600px) {
-  .hero-text {
-    bottom: 80px;
-    font-size: 1.4rem;
-  }
-}
 
 /* Card piante: solo sfondo bianco e box-shadow leggera, niente bordi */
 .plant-card {
