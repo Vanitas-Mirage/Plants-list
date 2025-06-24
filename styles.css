@@ -59,9 +59,9 @@ body {
   line-height: 1;
 }
 
-@keyframes bounceDown {
-  0%, 100% { transform: rotate(45deg) translateY(0); }
-  50% { transform: rotate(45deg) translateY(8px); }
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
 }
 
 /* Mobile */
