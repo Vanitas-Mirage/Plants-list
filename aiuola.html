@@ -60,6 +60,14 @@
 
     loadPlants();
   </script>
+  <script>
+  function scrollToPlants() {
+    const section = document.querySelector('.section-wrapper');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
 
 </body>
 </html>
