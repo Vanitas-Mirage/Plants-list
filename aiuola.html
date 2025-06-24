@@ -17,21 +17,23 @@
 <body>
 
   <!-- Hero con video in loop -->
-<section class="hero">
-  <video autoplay muted loop playsinline preload="auto" poster="img/poster.jpg">
-    <source src="img/main.mp4" type="video/mp4" />
-    Il tuo browser non supporta il video HTML5.
-  </video>
-  <div class="hero-text" onclick="scrollToPlants()">
-    Scopri le nostre piante
-    <span class="arrow-down"></span>
-  </div>
-</section>
+  <section class="hero">
+    <video autoplay muted loop playsinline preload="auto" poster="img/poster.jpg">
+      <source src="img/main.mp4" type="video/mp4" />
+      Il tuo browser non supporta il video HTML5.
+    </video>
+    <div class="hero-text" onclick="scrollToPlants()">
+      Scopri le nostre piante
+    </div>
+  </section>
 
   <!-- Lista piante -->
   <section class="section-wrapper">
     <div id="plantList"></div>
   </section>
+
+  <!-- Pulsante torna su -->
+  <button id="backToTop" title="Torna su">↑</button>
 
   <!-- Bootstrap + JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -53,21 +55,47 @@
           `;
           container.appendChild(card);
         });
+
+        // Dopo aver inserito tutte le card, applica observer per animazione
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.plant-card').forEach(card => observer.observe(card));
+
       } catch (err) {
         console.error('Errore nel caricamento delle piante:', err);
       }
     }
 
     loadPlants();
-  </script>
-  <script>
-  function scrollToPlants() {
-    const section = document.querySelector('.section-wrapper');
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+
+    // Scroll verso la sezione piante
+    function scrollToPlants() {
+      const section = document.querySelector('.section-wrapper');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  }
-</script>
+
+    // Pulsante torna su
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.style.display = 'block';
+      } else {
+        backToTopBtn.style.display = 'none';
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
 </body>
 </html>
