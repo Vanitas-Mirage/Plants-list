@@ -21,41 +21,21 @@ body {
     linear-gradient(to bottom, #6B8E23 0%, #4B692F 100%);
 }
 
-/* Video con parallax */
 .hero video {
-  position: fixed; /* per effetto parallax */
-  top: 0;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  transform: translateX(-50%) translateY(0);
-  opacity: 0.85;
-  transition: transform 0.1s;
-}
-
-/* Overlay animato sopra il video */
-.hero::before {
-  content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(107,142,35,0.5), rgba(75,105,47,0.7));
-  pointer-events: none;
-  animation: overlayShift 6s ease-in-out infinite alternate;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.85;
 }
 
-@keyframes overlayShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-/* Testo Hero con linea e freccia */
+/* Testo Hero con freccia animata */
 .hero-text {
   position: absolute;
   bottom: 8%;
@@ -63,14 +43,15 @@ body {
   transform: translateX(-50%);
   color: white;
   font-family: 'Lora', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
   font-size: 1.8rem;
   width: 80%;
   text-align: center;
-  display: inline-block;
   cursor: pointer;
+  display: inline-block;
 }
 
-/* Freccia animata */
 .hero-text::after {
   content: "⇩";
   display: block;
@@ -86,15 +67,6 @@ body {
   50% { transform: translateY(10px); }
 }
 
-/* Mobile */
-@media (max-width: 576px) {
-  .hero-text {
-    bottom: 12%;
-    font-size: 1.4rem;
-    width: 90%;
-  }
-}
-
 /* Card piante */
 .plant-card {
   background: white;
@@ -104,22 +76,36 @@ body {
   padding: 1rem;
   text-align: center;
   border: none;
+
+  /* Animazione comparsa */
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
 }
 
-/* Card visibili con fade-in */
+/* Classe per mostrare la card */
 .plant-card.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Immagini piante */
+/* Hover sulle card */
+.plant-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Immagini piante con cornice animata */
 .plant-card img {
   max-width: 100%;
   height: auto;
   border-radius: 0.75rem;
+  border: 3px solid #e2e8d8;
+  transition: border 0.3s ease;
+}
+
+.plant-card:hover img {
+  border-color: #a3c28b;
 }
 
 /* Nome pianta */
@@ -143,7 +129,6 @@ body {
   margin: 2rem auto;
   padding: 0 1rem;
 }
-
 
 /* Mobile */
 @media (max-width: 576px) {
