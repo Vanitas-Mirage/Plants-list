@@ -11,6 +11,7 @@ body {
   position: relative;
   height: 100vh;
   overflow: hidden;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +35,7 @@ body {
   opacity: 0.85;
 }
 
-/* Testo Hero con linea e freccia */
+/* Testo Hero con freccia animata */
 .hero-text {
   position: absolute;
   bottom: 8%;
@@ -42,17 +43,19 @@ body {
   transform: translateX(-50%);
   color: white;
   font-family: 'Lora', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
   font-size: 1.8rem;
   width: 80%;
   text-align: center;
+  cursor: pointer;
   display: inline-block;
 }
 
-/* Freccia animata */
 .hero-text::after {
-  content: "⇩"; /* oppure "⇩" per una freccia più marcata */
+  content: "⇩";
   display: block;
-  margin: 1rem auto 0; /* distanza tra il testo e la freccia */
+  margin: 1rem auto 0;
   animation: bounce 1.5s infinite;
   font-size: 2.4rem;
   color: white;
@@ -64,15 +67,6 @@ body {
   50% { transform: translateY(10px); }
 }
 
-/* Mobile */
-@media (max-width: 576px) {
-  .hero-text {
-    bottom: 12%;
-    font-size: 1.4rem;
-    width: 90%;
-  }
-}
-
 /* Card piante */
 .plant-card {
   background: white;
@@ -82,13 +76,36 @@ body {
   padding: 1rem;
   text-align: center;
   border: none;
+
+  /* Animazione comparsa */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
 }
 
-/* Immagini piante */
+/* Classe per mostrare la card */
+.plant-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover sulle card */
+.plant-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+/* Immagini piante con cornice animata */
 .plant-card img {
   max-width: 100%;
   height: auto;
   border-radius: 0.75rem;
+  border: 3px solid #e2e8d8;
+  transition: border 0.3s ease;
+}
+
+.plant-card:hover img {
+  border-color: #a3c28b;
 }
 
 /* Nome pianta */
@@ -112,3 +129,35 @@ body {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero-text {
+    bottom: 12%;
+    font-size: 1.4rem;
+    width: 90%;
+  }
+}
+
+/* Pulsante torna su */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.5rem 1rem;
+  background: #6B8E23;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+#backToTop:hover {
+  background: #8fbf4d;
+}
+
