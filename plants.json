@@ -1,52 +1,52 @@
 [
-    {
-      "name": "Lagerstroemia indica",
-      "img": "img/img_4483.webp",
-      "description": "Lagerstroemia indica, comunemente nota come mirto crespo, è un piccolo albero, o arbusto, deciduo originario della Cina sudorientale"
-    },
-    {
-      "name": "Acer polymorphum",
-      "img": "img/img_4487.webp",
-      "description": "Fiori di colore rosso, sono riuniti in piccoli grappoli che fioriscono in estate, bellissimo fogliame ornamentale, con foglie frastagliate che in autunno assumono spettacolari colorazioni. Pianta rustica resistente al freddo (fino a -15° C), predilige terreni ricchi e ben drenati."
-    },
-    {
-      "name": "Osmanthus fragrans",
-      "img": "img/img_4491.webp",
-      "description": "Conosciuto anche come Olea fragrans, è un arbusto sempreverde originario della Cina e del Giappone, apprezzato per il suo profumo intenso e dolce dei fiori. I fiori, piccoli e bianchi, sbocciano in autunno, emanando un profumo che ricorda quello della magnolia, della gardenia o della fresia secondo Accademia del Profumo. Le foglie sono di colore verde scuro, oblunghe e coriacee"
-    },
-    {
-      "name": "agapanthus africanus",
-      "img": "img/img_4482.webp",
-      "description": "Noto anche come Agapanto, è una pianta erbacea perenne sempreverde originaria del Sudafrica, apprezzata per le sue infiorescenze a forma di ombrello di fiori blu (o bianchi) su steli alti. Le foglie sono nastriformi, di colore verde brillante, e disposte a rosetta"
-    },
-    {
-      "name": "Salvia microphylla",
-      "img": "img/img_4484.webp",
-      "description": "Pianta perenne, arbustiva, originaria del Messico e dell'Arizona, caratterizzata da foglie piccole e aromatiche e da una fioritura abbondante, spesso bicolore, con fiori rossi e bianchi. È una pianta ornamentale molto apprezzata per la sua resistenza e la sua fioritura prolungata, ideale per bordure, giardini mediterranei e vasi. "
-    },
-    {
-      "name": "salvia amistad",
-      "img": "img/img_4488.webp",
-      "description": "Erbacea perenne dai fiori viola e dal profumo aromatico intenso. Appartiene alla famiglia delle Lamiaceae. Il periodo di fioritura della Amistad va dalla primavera all'autunno inoltrato. E' una pianta che ama il terreno che dev'essere fertile e ricco di sostanze organiche, ben drenato"
-    },
-    {
-      "name": "pitosforo tobira nano",
-      "img": "img/img_4486.webp",
-      "description": "Arbusto sempreverde di dimensioni ridotte, ideale per bordure e siepi basse. Ha una forma arrotondata e compatta, con foglie coriacee, lucide e di colore verde scuro. I fiori, che sbocciano in primavera e inizio estate, sono bianchi o crema e profumano intensamente di arancio"
-    },
-    {
-      "name": "Taxus media 'Hillii'",
-      "img": "img/img_4499.webp",
-      "description": "Fogliame verde scuro e può essere utilizzato ottimamente come pianta da siepe a condizione che la siepe di questa specie di tasso non diventi più alta di circa 180 cm. Se lasci crescere di più la siepe corri il rischio che ricada lateralmente sotto il peso di una eventuale nevicata"
-    },
-    {
-        "name": "Miscanto sinensis",
-        "img": "img/img_4489.jpg",
-        "description": "Graminacea ornamentale di bellissimo effetto cromatico, con foglie verde chiaro che si sfumano sulle punte di rosso acceso in primavera e poi di rosso scuro/viola con l'arrivo di temperature più basse in autunno. Cresce bene in terreni ricchi, non aridi, in pieno sole o mezz'ombra"
-    },
-    {
-        "name": "Pennisetum alopecuroides",
-        "img": "img/img_5000.jpg",
-        "description": "Caratterizzata da un portamento cespuglioso e tondeggiante, raggiunge medie dimensioni, con foglie strette e nastriformi di colore verde scuro, che virano al giallo in autunno. Le sue infiorescenze a spiga, di colore crema o bianco-rosato, conferiscono un aspetto leggero e piumoso, soprattutto in estate e autunno"
-    }
+  {
+    "name": "Lagerstroemia indica",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4483.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Lagerstroemia indica, comunemente nota come mirto crespo, è un piccolo albero, o arbusto, deciduo originario della Cina sudorientale"
+  },
+  {
+    "name": "Acer polymorphum",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4487.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Fiori di colore rosso, sono riuniti in piccoli grappoli che fioriscono in estate, bellissimo fogliame ornamentale, con foglie frastagliate che in autunno assumono spettacolari colorazioni. Pianta rustica resistente al freddo (fino a -15° C), predilige terreni ricchi e ben drenati."
+  },
+  {
+    "name": "Osmanthus fragrans",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4491.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Conosciuto anche come Olea fragrans, è un arbusto sempreverde originario della Cina e del Giappone, apprezzato per il suo profumo intenso e dolce dei fiori..."
+  },
+  {
+    "name": "Agapanthus africanus",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4482.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Noto anche come Agapanto, è una pianta erbacea perenne sempreverde originaria del Sudafrica..."
+  },
+  {
+    "name": "Salvia microphylla",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4484.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Pianta perenne, arbustiva, originaria del Messico e dell'Arizona, caratterizzata da foglie piccole e aromatiche e da una fioritura abbondante..."
+  },
+  {
+    "name": "Salvia Amistad",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4488.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Erbacea perenne dai fiori viola e dal profumo aromatico intenso. Il periodo di fioritura va dalla primavera all'autunno inoltrato..."
+  },
+  {
+    "name": "Pitosforo tobira nano",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4486.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Arbusto sempreverde di dimensioni ridotte, ideale per bordure e siepi basse. Ha una forma arrotondata e compatta..."
+  },
+  {
+    "name": "Taxus media 'Hillii'",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4499.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Fogliame verde scuro, ottimo come pianta da siepe. Resiste bene se mantenuto sotto i 180 cm di altezza..."
+  },
+  {
+    "name": "Miscanto sinensis",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_4489.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Graminacea ornamentale con foglie verde chiaro e punte rossastre in primavera, che diventano rosso scuro in autunno..."
+  },
+  {
+    "name": "Pennisetum alopecuroides",
+    "img": "https://ik.imagekit.io/Vanitas/img/img_5000.jpg?tr=w-800,f-auto,q=auto",
+    "description": "Cespuglio tondeggiante con foglie verdi che virano al giallo in autunno. Infiorescenze a spiga molto ornamentali..."
+  }
 ]
