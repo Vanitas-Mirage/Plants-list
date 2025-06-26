@@ -7,6 +7,65 @@ body {
 }
 
 /* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 
+    radial-gradient(circle at left center, rgba(150, 100, 50, 0.7) 20%, transparent 60%),
+    radial-gradient(circle at right center, rgba(150, 100, 50, 0.7) 20%, transparent 60%),
+    linear-gradient(to bottom, #6B8E23 0%, #4B692F 100%);
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+/* Testo Hero con freccia animata */
+.hero-text {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  width: 80%;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hero-text::after {
+  content: "⇩";
+  display: block;
+  margin: 1rem auto 0;
+  animation: bounce 1.5s infinite;
+  font-size: 2.4rem;
+  color: white;
+  line-height: 1;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
 
 /* Card piante */
 .plant-card {
