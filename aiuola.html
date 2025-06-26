@@ -18,10 +18,21 @@
 
   <!-- Hero con video in loop -->
   <section class="hero">
-    <video autoplay muted loop playsinline preload="metadata" poster="img/poster.jpg">
-      <source src="img/main.mp4" type="video/mp4" />
-      Il tuo browser non supporta il video HTML5.
-    </video>
+<video id="heroVideo" muted loop playsinline preload="none" poster="img/poster.webp">
+  <source data-src="img/main_web.mp4" type="video/mp4">
+</video>
+<script>
+  const vid = document.getElementById('heroVideo');
+  const src = vid.querySelector('source');
+  new IntersectionObserver(([e],o)=>{
+      if(e.isIntersecting){
+        src.src = src.dataset.src;    // inietta src SOLO quando in vista
+        vid.load(); vid.play();
+        o.disconnect();
+      }
+  },{rootMargin:"0px"}).observe(vid);
+</script>
+
     <div class="hero-text" onclick="scrollToPlants()">
       Scopri le nostre piante
     </div>
