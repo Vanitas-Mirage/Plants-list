@@ -81,6 +81,11 @@ body {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease-in-out;
+
+  /* ✅ Nuove proprietà */
+  word-wrap: break-word;
+  overflow: visible;
+  height: auto;
 }
 
 /* Classe per mostrare la card */
@@ -121,6 +126,13 @@ body {
   font-size: 0.95rem;
   color: #555;
   margin-top: 0.5rem;
+
+  /* ✅ Aggiunto per evitare troncamenti */
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+  display: block;
+  line-height: 1.5;
 }
 
 /* Contenitore lista piante */
