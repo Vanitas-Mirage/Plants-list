@@ -18,7 +18,7 @@
 
   <!-- Hero con video in loop -->
   <section class="hero">
-    <video autoplay muted loop playsinline preload="auto" poster="img/poster.jpg">
+    <video autoplay muted loop playsinline preload="metadata" poster="img/poster.jpg">
       <source src="img/main.mp4" type="video/mp4" />
       Il tuo browser non supporta il video HTML5.
     </video>
@@ -49,7 +49,7 @@
           const card = document.createElement('div');
           card.className = 'plant-card';
           card.innerHTML = `
-            <img src="${plant.img}" alt="${plant.name}" />
+            <img src="${plant.img}" alt="${plant.name}" loading ="lazy" />
             <div class="plant-name">${plant.name}</div>
             <div class="plant-desc">${plant.description}</div>
           `;
